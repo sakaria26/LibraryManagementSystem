@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="648.0" styleClass="anchor-pane" stylesheets="@../../styles/issues.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thelibrary.controller.IssuesController">
+   <children>
+      <TableView fx:id="issuesTBL" layoutX="33.0" layoutY="216.0" prefHeight="347.0" prefWidth="582.0">
+        <columns>
+          <TableColumn fx:id="issueIDCOL" prefWidth="85.5999755859375" text="Issue ID" />
+          <TableColumn fx:id="memberIDCOL" prefWidth="77.5999755859375" text="Member ID" />
+            <TableColumn fx:id="mediaIDCOL" text="Media ID" />
+            <TableColumn fx:id="issueDateCOL" prefWidth="87.20001220703125" text="Issue Date" />
+            <TableColumn fx:id="periodCOL" prefWidth="90.4000244140625" text="Period (Days)" />
+            <TableColumn fx:id="returnDateCOL" prefWidth="147.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="47.0" layoutY="100.0" prefHeight="40.0" prefWidth="440.0" styleClass="searchBox" stylesheets="@../../styles/issues.css">
+         <children>
+            <TextField fx:id="issueSearchTXT" prefHeight="26.0" prefWidth="360.0" styleClass="searchTxt" />
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: transparent;" text="Search" textFill="#ededed">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="519.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="115.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#returnBTNEVENT" prefHeight="38.0" prefWidth="115.0" styleClass="btnStyle" stylesheets="@../../styles/issues.css" text="Mark Returned" />
+            <Button mnemonicParsing="false" onAction="#confirmEvent" prefHeight="37.0" prefWidth="110.0" styleClass="btnStyle" text="Confirm Issue" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

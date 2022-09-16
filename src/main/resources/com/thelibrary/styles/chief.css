@@ -1,0 +1,215 @@
+/*
+#ededed
+#db461a
+#371140
+*/
+
+.anchor-pane{
+    -fx-background-color: #ededed;
+}
+
+.vBox{
+    -fx-background-color: #db461a;
+    -fx-border-right: solid #f9f9f9;
+    -fx-border-width: 5;
+}
+
+.text-field{
+    -fx-font-family: 'Genos';
+}
+
+.label{
+    -fx-font-family: 'Genos';
+}
+
+.headerBox{
+    -fx-background-color: #db461a;
+}
+
+.hBoxMenu{
+    -fx-background-color: #db461a;
+}
+.hBoxMenu:hover{
+    -fx-background-color: #ededed;
+}
+.buttonStyle{
+    -fx-background-color: transparent;
+    -fx-pref-width: 110;
+    -fx-pref-height: 40;
+}
+.menuButtonStyle{
+    -fx-text-fill: #ededed;
+    -fx-background-color: transparent;
+}
+.menuButtonStyle:hover{
+    -fx-text-fill: #db461a;
+    -fx-background-color: transparent;
+}
+.text-field, .text-area{
+    -fx-border-color: #371140;
+    -fx-background-color: #f9f8f8;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 12;
+    -fx-border-width: 3;
+    -fx-background-insets: 0;
+    /*-fx-pref-width: 200;*/
+}
+
+.text-field:focused{
+    -fx-text-fill: #371140;
+}
+
+
+.btnStyle{
+    -fx-border-radius: 2em;
+    -fx-background-color: #371140;
+    -fx-background-radius: 2em;
+    -fx-text-fill: #ededed;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+}
+
+.btnStyle:hover{
+    -fx-font-family: 'Genos';
+    -fx-border-radius: 2em;
+    -fx-background-color: #ededed;
+    -fx-background-radius: 2em;
+    -fx-text-fill: #371140;
+    -fx-border-width: 2;
+    -fx-border-color: #371140;
+    -fx-background-insets: 0;
+}
+
+.radio-button{
+    -fx-border-width: 2px;
+    -fx-border-color: #371140;
+    -fx-background-color: #f9f8f8;
+    -fx-background-image: null;
+    -fx-border-radius: 15px;
+    -fx-padding: 3px;
+}
+
+.searchBox{
+    -fx-background-color: #db461a;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.searchTxt{
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ededed;
+}
+
+.searchTxt:focused{
+    -fx-text-fill: #ededed;
+    -fx-font-weight: bold;
+}
+
+.tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #ededed;
+    -fx-text-fill: #db461a;
+    -fx-border-width: 0;
+}
+
+.tab:selected .tab-label{
+    -fx-text-fill: #371140;
+    -fx-font-weight: bold;
+}
+
+.tab{
+    -fx-pref-width: 8em;
+    -fx-background-color: #371140;
+    -fx-font-weight: bold;
+}
+.tab .tab-label{
+    -fx-text-fill: #ededed;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #db461a;
+    -fx-background-radius: 10px 10px 0px 0px;
+    -fx-background-insets: 0 0px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e2e2e2;
+}
+.table-view .column-header .label{
+    -fx-text-fill: #ededed;
+    -fx-alignment: left;
+}
+
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-text-fill: #db461a;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #ededed;
+    -fx-text-fill: #db461a;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #ededed40;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #db461a40;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #371140, #db461a);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #371140, #db461a);
+}
