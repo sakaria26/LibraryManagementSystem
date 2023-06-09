@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" styleClass="backgroundStyles" stylesheets="@../styles/member.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thelibrary.controller.MemberController">
+   <children>
+      <TextField fx:id="nameTXT" layoutX="50.0" layoutY="104.0" prefHeight="30.0" prefWidth="200.0" promptText="Name" stylesheets="@../styles/member.css" />
+      <TextField fx:id="surnameTXT" layoutX="50.0" layoutY="169.0" prefHeight="30.0" prefWidth="200.0" promptText="Surname" stylesheets="@../styles/member.css" />
+      <TextField fx:id="emailTXT" layoutX="50.0" layoutY="234.0" prefHeight="30.0" prefWidth="200.0" promptText="Email" stylesheets="@../styles/member.css" />
+      <TextField fx:id="confirmEmailTXT" layoutX="50.0" layoutY="299.0" prefHeight="30.0" prefWidth="200.0" promptText="Confirm Email" stylesheets="@../styles/member.css" />
+      <TextField fx:id="phoneNumber" layoutX="50.0" layoutY="364.0" prefHeight="30.0" prefWidth="200.0" promptText="Phone Number" stylesheets="@../styles/member.css" />
+      <Button layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeBtnEvent" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/cancel_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackToLogin" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/back_to_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="105.0" layoutY="431.0" mnemonicParsing="false" onAction="#signUpEvent" prefHeight="30.0" prefWidth="90.0" styleClass="btnStyle" stylesheets="@../styles/member.css" text="Sign Up" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+.backgroundStyles{
+    -fx-background-color: #db461a;
+}
+
+.text-field{
+    -fx-border-color: #371140;
+    -fx-background-color: #f9f8f8;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em;
+    -fx-border-width: 3;
+    -fx-background-insets: 0;
+}
+
+.text-field:focused{
+    -fx-text-fill: #371140;
+}
+
+.btnStyle{
+    -fx-border-radius: 2em;
+    -fx-background-color: #371140;
+    -fx-background-radius: 2em;
+    -fx-text-fill: #ededed;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+    -fx-pref-width: 200;
+    -fx-pref-height: 35;
+}
+
+.btnStyle:hover{
+    -fx-border-radius: 2em;
+    -fx-background-color: #ededed;
+    -fx-background-radius: 2em;
+    -fx-text-fill: #371140;
+    -fx-border-width: 2;
+    -fx-border-color: #371140;
+    -fx-background-insets: 0;
+}

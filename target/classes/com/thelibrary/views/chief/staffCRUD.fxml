@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thelibrary.controller.ChiefController">
+   <children>
+      <TextField fx:id="librarianNameTXT" layoutX="63.0" layoutY="89.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="230.0" promptText="Name" styleClass="text-field" stylesheets="@../../styles/chief.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="librarianSurnameTXT" layoutX="337.0" layoutY="89.0" prefHeight="39.0" prefWidth="230.0" promptText="Surname" stylesheets="@../../styles/chief.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="librarianEmailTXT" layoutX="63.0" layoutY="168.0" prefHeight="39.0" prefWidth="230.0" promptText="Email" stylesheets="@../../styles/chief.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="librarianRoleTXT" layoutX="337.0" layoutY="168.0" prefHeight="39.0" prefWidth="230.0" promptText="Role" stylesheets="@../../styles/chief.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="156.0" layoutY="285.0" prefHeight="58.0" prefWidth="130.0">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addLibrarianEvent" prefHeight="40.0" prefWidth="130.0" styleClass="btnStyle" stylesheets="@../../styles/chief.css" text="Add" />
+         </children>
+      </VBox>
+      <VBox layoutX="358.0" layoutY="285.0" prefHeight="58.0" prefWidth="130.0">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelAddLibrarianEvent" prefHeight="40.0" prefWidth="130.0" styleClass="btnStyle" stylesheets="@../../styles/chief.css" text="Cancel" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

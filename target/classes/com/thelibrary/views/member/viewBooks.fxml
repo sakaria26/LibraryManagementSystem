@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mediaPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" styleClass="anchor-pane" stylesheets="@../../styles/librarian.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thelibrary.controller.Member.BookController">
+    <children>
+              <HBox alignment="CENTER" layoutX="105.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="440.0" styleClass="searchBox" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="74.0">
+                  <children>
+                      <TextField fx:id="bookSearchTXT" prefHeight="26.0" prefWidth="360.0" styleClass="searchTxt" />
+                      <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: transparent;" text="Search" textFill="#371140">
+                          <font>
+                              <Font name="System Bold" size="12.0" />
+                          </font>
+                      </Button>
+                  </children>
+              </HBox>
+      <TableView fx:id="bookTableView" layoutX="80.0" layoutY="183.0" prefHeight="352.0" prefWidth="490.0">
+        <columns>
+          <TableColumn fx:id="bookTitleCOL" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" text="Title" />
+          <TableColumn fx:id="bookAuthorCOL" maxWidth="182.3999481201172" minWidth="110.0" prefWidth="177.5998992919922" text="Author" />
+            <TableColumn fx:id="bookPublicationYearCOL" maxWidth="157.60003662109375" minWidth="31.20001220703125" prefWidth="111.199951171875" text="Publication Year" />
+            <TableColumn fx:id="bookGenreCOL" maxWidth="154.39996337890625" prefWidth="80.00006103515625" text="Genre" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
